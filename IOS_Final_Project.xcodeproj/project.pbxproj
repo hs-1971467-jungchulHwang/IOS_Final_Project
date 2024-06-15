@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		235E688A2C1B5C6300289407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235E68882C1B5C6300289407 /* Main.storyboard */; };
 		235E688C2C1B5C6500289407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235E688B2C1B5C6500289407 /* Assets.xcassets */; };
 		235E688F2C1B5C6500289407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235E688D2C1B5C6500289407 /* LaunchScreen.storyboard */; };
+		23CE4F822C1D9F590059AA7E /* MoneyKeep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F812C1D9F590059AA7E /* MoneyKeep.swift */; };
+		23CE4F862C1D9F7F0059AA7E /* MoneyKeepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F852C1D9F7F0059AA7E /* MoneyKeepList.swift */; };
+		23CE4F882C1D9FED0059AA7E /* MoneyKeepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F872C1D9FED0059AA7E /* MoneyKeepTableViewCell.swift */; };
+		23CE4F8A2C1DA02F0059AA7E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F892C1DA02F0059AA7E /* AddViewController.swift */; };
+		23CE4F8C2C1DA0920059AA7E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F8B2C1DA0910059AA7E /* DetailViewController.swift */; };
+		23CE4F8E2C1DA13D0059AA7E /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F8D2C1DA13D0059AA7E /* StatisticsViewController.swift */; };
+		23CE4F912C1DA1C10059AA7E /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 23CE4F902C1DA1C10059AA7E /* DGCharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		235E688B2C1B5C6500289407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		235E688E2C1B5C6500289407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		235E68902C1B5C6500289407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CE4F812C1D9F590059AA7E /* MoneyKeep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyKeep.swift; sourceTree = "<group>"; };
+		23CE4F852C1D9F7F0059AA7E /* MoneyKeepList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyKeepList.swift; sourceTree = "<group>"; };
+		23CE4F872C1D9FED0059AA7E /* MoneyKeepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyKeepTableViewCell.swift; sourceTree = "<group>"; };
+		23CE4F892C1DA02F0059AA7E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		23CE4F8B2C1DA0910059AA7E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		23CE4F8D2C1DA13D0059AA7E /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CE4F912C1DA1C10059AA7E /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,12 @@
 				235E688B2C1B5C6500289407 /* Assets.xcassets */,
 				235E688D2C1B5C6500289407 /* LaunchScreen.storyboard */,
 				235E68902C1B5C6500289407 /* Info.plist */,
+				23CE4F812C1D9F590059AA7E /* MoneyKeep.swift */,
+				23CE4F852C1D9F7F0059AA7E /* MoneyKeepList.swift */,
+				23CE4F872C1D9FED0059AA7E /* MoneyKeepTableViewCell.swift */,
+				23CE4F892C1DA02F0059AA7E /* AddViewController.swift */,
+				23CE4F8B2C1DA0910059AA7E /* DetailViewController.swift */,
+				23CE4F8D2C1DA13D0059AA7E /* StatisticsViewController.swift */,
 			);
 			path = IOS_Final_Project;
 			sourceTree = "<group>";
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = IOS_Final_Project;
+			packageProductDependencies = (
+				23CE4F902C1DA1C10059AA7E /* DGCharts */,
+			);
 			productName = IOS_Final_Project;
 			productReference = 235E687F2C1B5C6300289407 /* IOS_Final_Project.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 235E68762C1B5C6200289407;
+			packageReferences = (
+				23CE4F8F2C1DA1C10059AA7E /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 235E68802C1B5C6300289407 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +165,13 @@
 			files = (
 				235E68872C1B5C6300289407 /* ViewController.swift in Sources */,
 				235E68832C1B5C6300289407 /* AppDelegate.swift in Sources */,
+				23CE4F8A2C1DA02F0059AA7E /* AddViewController.swift in Sources */,
 				235E68852C1B5C6300289407 /* SceneDelegate.swift in Sources */,
+				23CE4F822C1D9F590059AA7E /* MoneyKeep.swift in Sources */,
+				23CE4F862C1D9F7F0059AA7E /* MoneyKeepList.swift in Sources */,
+				23CE4F8E2C1DA13D0059AA7E /* StatisticsViewController.swift in Sources */,
+				23CE4F882C1D9FED0059AA7E /* MoneyKeepTableViewCell.swift in Sources */,
+				23CE4F8C2C1DA0920059AA7E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23CE4F8F2C1DA1C10059AA7E /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23CE4F902C1DA1C10059AA7E /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23CE4F8F2C1DA1C10059AA7E /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 235E68772C1B5C6200289407 /* Project object */;
 }
