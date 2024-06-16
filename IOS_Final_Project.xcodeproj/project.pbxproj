@@ -19,7 +19,6 @@
 		23CE4F8A2C1DA02F0059AA7E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F892C1DA02F0059AA7E /* AddViewController.swift */; };
 		23CE4F8C2C1DA0920059AA7E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F8B2C1DA0910059AA7E /* DetailViewController.swift */; };
 		23CE4F8E2C1DA13D0059AA7E /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F8D2C1DA13D0059AA7E /* StatisticsViewController.swift */; };
-		23CE4F912C1DA1C10059AA7E /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 23CE4F902C1DA1C10059AA7E /* DGCharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23CE4F912C1DA1C10059AA7E /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +102,6 @@
 			);
 			name = IOS_Final_Project;
 			packageProductDependencies = (
-				23CE4F902C1DA1C10059AA7E /* DGCharts */,
 			);
 			productName = IOS_Final_Project;
 			productReference = 235E687F2C1B5C6300289407 /* IOS_Final_Project.app */;
@@ -382,14 +379,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		23CE4F902C1DA1C10059AA7E /* DGCharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 23CE4F8F2C1DA1C10059AA7E /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = DGCharts;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 235E68772C1B5C6200289407 /* Project object */;
 }
