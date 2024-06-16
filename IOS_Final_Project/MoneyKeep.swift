@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 struct MoneyKeep{
     var image : UIImage
     var type : Int

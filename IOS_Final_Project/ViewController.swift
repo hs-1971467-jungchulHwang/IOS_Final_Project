@@ -31,10 +31,10 @@ class ViewController: UIViewController{
         tableView.dataSource = self
         
         // 테이블 셀 등록
-        tableView.register(UINib(nibName: "AccountTableViewCell", bundle: nil), forCellReuseIdentifier: "AccountCell")
+        tableView.register(UINib(nibName: "MoneyKeepTableViewCell", bundle: nil), forCellReuseIdentifier: "MoneyKeepCell")
         
         //초기 데이터
-        expendList.addNew(image: buyImage[0],  type: 0 , memo: "수빈이랑 쇼핑", price: "50000", date: "2021.06.25", isExpenditure: true)
+        expendList.addNew(image: buyImage[0],  type: 0 , memo: "", price: "50000", date: "2021.06.25", isExpenditure: true)
         incomeList.addNew(image: buyImage[7],  type: 7 , memo: "7월 월급", price: "200000", date: "2021.07.07", isExpenditure: false)
         expendList.addNew(image: buyImage[6],  type: 6 , memo: "베트남 여행", price: "150000", date: "2020.07.07", isExpenditure: true)
         expendList.addNew(image: buyImage[2],  type: 2 , memo: "지하철", price: "20000", date: "2021.07.07", isExpenditure: true)
@@ -79,7 +79,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
     }
     // 각 행이 화면에 표현해야 할 내용을 구성
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath) as? AccountTableViewCell else{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MoneyKeepCell", for: indexPath) as? MoneyKeepTableViewCell else{
             return UITableViewCell()
         }
         var acc = MoneyKeep(image: buyImage[0],  type: 0 , memo: "수빈이랑 쇼핑", price: "5000", date: "2020.02.25", isExpenditure: true)

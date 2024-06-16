@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class AccountTableViewCell: UITableViewCell {
+class MoneyKeepTableViewCell: UITableViewCell {
 
     @IBOutlet weak var uiImage: UIImageView!
     @IBOutlet weak var uiType: UILabel!

@@ -11,7 +11,7 @@
         <!--가계부 목록-->
         <scene sceneID="o85-cq-MJl">
             <objects>
-                <viewController id="Fwh-6T-GSj" customClass="ViewController" customModule="AccountBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fwh-6T-GSj" customClass="ViewController" customModule="IOS_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BFP-po-aX2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
         <!--항목 추가-->
         <scene sceneID="0x5-hC-lHR">
             <objects>
-                <viewController id="tJO-Cp-u4M" customClass="AddViewController" customModule="AccountBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tJO-Cp-u4M" customClass="AddViewController" customModule="IOS_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RhF-F8-ANL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +194,7 @@
         <!--상세 보기-->
         <scene sceneID="e7W-kf-Zm8">
             <objects>
-                <viewController id="dY8-al-vOg" customClass="DetailViewController" customModule="AccountBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dY8-al-vOg" customClass="DetailViewController" customModule="IOS_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U34-9e-dr1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
