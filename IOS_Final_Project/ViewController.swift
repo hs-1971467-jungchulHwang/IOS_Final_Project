@@ -10,7 +10,7 @@ import UIKit
 var expendList = MoneyKeepList()
 var incomeList = MoneyKeepList()
 
-let buyType = ["쇼핑","음식","교통","오락","생활","투자", "여행", "월급"]
+let buyType = ["쇼핑","음식","교통","오락","생활","투자", "여행", "월급", "용돈"]
 let buyImage = [ #imageLiteral(resourceName: "online-shopping"),#imageLiteral(resourceName: "food"),#imageLiteral(resourceName: "vehicles"),#imageLiteral(resourceName: "game-controller"),#imageLiteral(resourceName: "house"),#imageLiteral(resourceName: "investment"),#imageLiteral(resourceName: "travel-bag"),#imageLiteral(resourceName: "money")]
 class ViewController: UIViewController{
     
@@ -31,16 +31,17 @@ class ViewController: UIViewController{
         tableView.dataSource = self
         
         // 테이블 셀 등록
-        tableView.register(UINib(nibName: "MoneyKeepTableViewCell", bundle: nil), forCellReuseIdentifier: "MoneyKeepCell")
+        tableView.register(UINib(nibName: "AccountTableViewCell", bundle: nil), forCellReuseIdentifier: "AccountCell")
         
         //초기 데이터
-        expendList.addNew(image: buyImage[0],  type: 0 , memo: "", price: "50000", date: "2021.06.25", isExpenditure: true)
-        incomeList.addNew(image: buyImage[7],  type: 7 , memo: "7월 월급", price: "200000", date: "2021.07.07", isExpenditure: false)
-        expendList.addNew(image: buyImage[6],  type: 6 , memo: "베트남 여행", price: "150000", date: "2020.07.07", isExpenditure: true)
-        expendList.addNew(image: buyImage[2],  type: 2 , memo: "지하철", price: "20000", date: "2021.07.07", isExpenditure: true)
-        expendList.addNew(image: buyImage[4],  type: 4 , memo: "핸드폰 요금", price: "100000", date: "2021.07.01", isExpenditure: true)
-        expendList.addNew(image: buyImage[1],  type: 1 , memo: "점심 식사", price: "10000", date: "2021.07.07", isExpenditure: true)
-        expendList.addNew(image: buyImage[5],  type: 5 , memo: "삼성전자 주식", price: "80000", date: "2021.07.05", isExpenditure: true)
+        expendList.addNew(image: buyImage[0],  type: 0 , memo: "옷 쇼핑", price: "50,000", date: "2024.06.25", isExpenditure: true)
+        incomeList.addNew(image: buyImage[7],  type: 7 , memo: "5월 월급", price: "2,000,000", date: "2024.06.07", isExpenditure: false)
+        incomeList.addNew(image: buyImage[7],  type: 7 , memo: "6월 월급", price: "2,000,000", date: "2024.06.07", isExpenditure: false)
+        expendList.addNew(image: buyImage[6],  type: 6 , memo: "제주도 여행", price: "350,000", date: "2024.06.07", isExpenditure: true)
+        expendList.addNew(image: buyImage[2],  type: 2 , memo: "5월 교통비", price: "80,000", date: "2024.06.07", isExpenditure: true)
+        expendList.addNew(image: buyImage[4],  type: 4 , memo: "핸드폰 요금", price: "100,000", date: "2024.06.01", isExpenditure: true)
+        expendList.addNew(image: buyImage[1],  type: 1 , memo: "점심 식사", price: "10,000", date: "2024.06.07", isExpenditure: true)
+        expendList.addNew(image: buyImage[5],  type: 5 , memo: "주식 투자", price: "100,000", date: "2024.06.05", isExpenditure: true)
         
         
         tableView.reloadData()
@@ -66,7 +67,7 @@ class ViewController: UIViewController{
 }
 
 extension ViewController : UITableViewDelegate, UITableViewDataSource{
-    // 테이블 뷰가 생성할 행 개수
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if(isExpended){
@@ -77,12 +78,12 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         }
         
     }
-    // 각 행이 화면에 표현해야 할 내용을 구성
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MoneyKeepCell", for: indexPath) as? MoneyKeepTableViewCell else{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell", for: indexPath) as? AccountTableViewCell else{
             return UITableViewCell()
         }
-        var acc = MoneyKeep(image: buyImage[0],  type: 0 , memo: "수빈이랑 쇼핑", price: "5000", date: "2020.02.25", isExpenditure: true)
+        var acc = MoneyKeep(image: buyImage[0],  type: 0 , memo: "쇼핑", price: "5000", date: "2020.02.25", isExpenditure: true)
         
         if(isExpended){
             acc = expendList.itemAt(index: indexPath.row)
@@ -103,12 +104,12 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
         
         return cell
     }
-    // 클릭 시, 상세보기
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         print("선택된 행은 \(indexPath.row)번째 행입니다.")
         performSegue(withIdentifier: "DetailView", sender: self)
     }
-    //네비게이션 바 값 전달
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             
             if let destination = segue.destination as? DetailViewController {
@@ -125,7 +126,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
                 
             }
     }
-    //스와이프 시, 삭제
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
             
             if editingStyle == .delete {
@@ -142,7 +143,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource{
                 
             }
     }
-    //삭제 버튼 이름 변경
+    
     func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         return "삭제"
     }

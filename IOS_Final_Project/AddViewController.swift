@@ -17,19 +17,19 @@ class AddViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDat
   
     var selectRow = 0
     var isExtended = true
-    // 몇 개씩 보여줄 것인가
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    // 총 갯수
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return buyType.count
     }
-    // 뭘 보여줄거냐
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return buyType[row]
     }
-    // 선택한 Array의 row값을 가져오기 위해서 초기값인 selectRow에 해당 row를 가져옴
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
             selectRow = row
     }

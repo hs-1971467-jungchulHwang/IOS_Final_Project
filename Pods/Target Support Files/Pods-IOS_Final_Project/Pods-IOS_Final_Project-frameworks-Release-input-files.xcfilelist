@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-IOS_Final_Project/Pods-IOS_Final_Project-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/SwiftAlgorithms/Algorithms.framework
+${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework
