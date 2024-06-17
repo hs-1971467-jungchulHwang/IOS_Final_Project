@@ -16,23 +16,23 @@ class DetailViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var segmented: UISegmentedControl!
     
     var selectRow = 0
-    var list = MoneyKeep(image: buyImage[0],  type: 0 , memo: "수빈이랑 쇼핑", price: "5000", date: "2020.02.25", isExpenditure: true)
+    var list = MoneyKeep(image: buyImage[0],  type: 0 , memo: "옷 쇼핑", price: "5000", date: "2024.06.25", isExpenditure: true)
     var indexOfList = 0
     var isExtended = true
     var initExtended = true
-    // 몇 개씩 보여줄 것인가
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    // 총 갯수
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return buyType.count
     }
-    // 뭘 보여줄거냐
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return buyType[row]
     }
-    // 선택한 Array의 row값을 가져오기 위해서 초기값인 selectRow에 해당 row를 가져옴
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
             selectRow = row
     }

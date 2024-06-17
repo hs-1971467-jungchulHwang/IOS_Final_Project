@@ -13,13 +13,13 @@
 		235E688A2C1B5C6300289407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235E68882C1B5C6300289407 /* Main.storyboard */; };
 		235E688C2C1B5C6500289407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235E688B2C1B5C6500289407 /* Assets.xcassets */; };
 		235E688F2C1B5C6500289407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235E688D2C1B5C6500289407 /* LaunchScreen.storyboard */; };
+		2364F1712C209250009AE7C5 /* statisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2364F1702C209250009AE7C5 /* statisticsViewController.swift */; };
 		237D0B282C1F14EB00A2EE09 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 237D0B272C1F14EB00A2EE09 /* AccountTableViewCell.xib */; };
 		23CE4F822C1D9F590059AA7E /* MoneyKeep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F812C1D9F590059AA7E /* MoneyKeep.swift */; };
 		23CE4F862C1D9F7F0059AA7E /* MoneyKeepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F852C1D9F7F0059AA7E /* MoneyKeepList.swift */; };
 		23CE4F882C1D9FED0059AA7E /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F872C1D9FED0059AA7E /* AccountTableViewCell.swift */; };
 		23CE4F8A2C1DA02F0059AA7E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F892C1DA02F0059AA7E /* AddViewController.swift */; };
 		23CE4F8C2C1DA0920059AA7E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F8B2C1DA0910059AA7E /* DetailViewController.swift */; };
-		23CE4F8E2C1DA13D0059AA7E /* statisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4F8D2C1DA13D0059AA7E /* statisticsViewController.swift */; };
 		FBE0A0C2CDDD4CB59BBF87F0 /* Pods_IOS_Final_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2F0C24148BD3BBBFC0EC3A /* Pods_IOS_Final_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,13 +32,13 @@
 		235E688B2C1B5C6500289407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		235E688E2C1B5C6500289407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		235E68902C1B5C6500289407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2364F1702C209250009AE7C5 /* statisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statisticsViewController.swift; sourceTree = "<group>"; };
 		237D0B272C1F14EB00A2EE09 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
 		23CE4F812C1D9F590059AA7E /* MoneyKeep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyKeep.swift; sourceTree = "<group>"; };
 		23CE4F852C1D9F7F0059AA7E /* MoneyKeepList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyKeepList.swift; sourceTree = "<group>"; };
 		23CE4F872C1D9FED0059AA7E /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		23CE4F892C1DA02F0059AA7E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		23CE4F8B2C1DA0910059AA7E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		23CE4F8D2C1DA13D0059AA7E /* statisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statisticsViewController.swift; sourceTree = "<group>"; };
 		3CF2802DC4F99D64965207A6 /* Pods-IOS_Final_Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_Final_Project.debug.xcconfig"; path = "Target Support Files/Pods-IOS_Final_Project/Pods-IOS_Final_Project.debug.xcconfig"; sourceTree = "<group>"; };
 		6F2F0C24148BD3BBBFC0EC3A /* Pods_IOS_Final_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Final_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32AD6BE549E6BFEBA35107A /* Pods-IOS_Final_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_Final_Project.release.xcconfig"; path = "Target Support Files/Pods-IOS_Final_Project/Pods-IOS_Final_Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,8 +89,8 @@
 				23CE4F872C1D9FED0059AA7E /* AccountTableViewCell.swift */,
 				23CE4F892C1DA02F0059AA7E /* AddViewController.swift */,
 				23CE4F8B2C1DA0910059AA7E /* DetailViewController.swift */,
-				23CE4F8D2C1DA13D0059AA7E /* statisticsViewController.swift */,
 				237D0B272C1F14EB00A2EE09 /* AccountTableViewCell.xib */,
+				2364F1702C209250009AE7C5 /* statisticsViewController.swift */,
 			);
 			path = IOS_Final_Project;
 			sourceTree = "<group>";
@@ -235,8 +235,8 @@
 				23CE4F8A2C1DA02F0059AA7E /* AddViewController.swift in Sources */,
 				235E68852C1B5C6300289407 /* SceneDelegate.swift in Sources */,
 				23CE4F822C1D9F590059AA7E /* MoneyKeep.swift in Sources */,
+				2364F1712C209250009AE7C5 /* statisticsViewController.swift in Sources */,
 				23CE4F862C1D9F7F0059AA7E /* MoneyKeepList.swift in Sources */,
-				23CE4F8E2C1DA13D0059AA7E /* statisticsViewController.swift in Sources */,
 				23CE4F882C1D9FED0059AA7E /* AccountTableViewCell.swift in Sources */,
 				23CE4F8C2C1DA0920059AA7E /* DetailViewController.swift in Sources */,
 			);

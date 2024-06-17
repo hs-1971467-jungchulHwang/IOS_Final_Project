@@ -25,15 +25,15 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Delegate = self -> 제스쳐, UI
+        
         tableView.delegate = self
-        // DataSource = self -> 데이터관리
+        
         tableView.dataSource = self
         
-        // 테이블 셀 등록
+        
         tableView.register(UINib(nibName: "AccountTableViewCell", bundle: nil), forCellReuseIdentifier: "AccountCell")
         
-        //초기 데이터
+        
         expendList.addNew(image: buyImage[0],  type: 0 , memo: "옷 쇼핑", price: "50,000", date: "2024.06.25", isExpenditure: true)
         incomeList.addNew(image: buyImage[7],  type: 7 , memo: "5월 월급", price: "2,000,000", date: "2024.06.07", isExpenditure: false)
         incomeList.addNew(image: buyImage[7],  type: 7 , memo: "6월 월급", price: "2,000,000", date: "2024.06.07", isExpenditure: false)
