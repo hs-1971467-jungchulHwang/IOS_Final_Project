@@ -20,7 +20,8 @@
 
 </br>
 
-![image](https://github.com/hs-1971467-jungchulHwang/IOS_Final_Project/assets/115887505/437b9731-d687-4cf0-b2c6-45970eb1887a)
+![image](https://github.com/hs-1971467-jungchulHwang/IOS_Final_Project/assets/115887505/2535f073-f5b6-4e07-a68d-b4d4a3bf6c78)
+
 </br>
 
 
@@ -28,7 +29,8 @@
 
 </br>
   
-![image](https://github.com/hs-1971467-jungchulHwang/IOS_Final_Project/assets/115887505/dfe222fd-4c72-4ff7-8ef2-fd7f6d78d952)
+![image](https://github.com/hs-1971467-jungchulHwang/IOS_Final_Project/assets/115887505/7169a379-bb22-4d6c-80fc-dd12f0472a06)
+
 </br>
 </details>
 
@@ -48,7 +50,7 @@ UISegmentedControll, Charts 라이브러리(PieChartView, BarChartView)
 
 ## 📹 시연 영상
 
-### 어플 시연 영상
+### Xcode버전이 낮아서 아이폰 최신 ios버전 지원이 안되서 에뮬레이터로 진행했습니다.</br> 따라서 렉이 많이 심합니다! 이해부탁드립니다
 [<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-](https://youtu.be/ecmkIjX2UoY?si=TNiKVZlIb-QZW489)
+](https://youtu.be/G8HCprMc6s8)
 <br/>
