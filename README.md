@@ -16,6 +16,29 @@
 
 ## 💻 화면 구성
 
+### 지출 화면
+
+</br>
+
+![image](https://github.com/hs-1971467-jungchulHwang/IOS_Final_Project/assets/115887505/437b9731-d687-4cf0-b2c6-45970eb1887a)
+</br>
+
+
+### 수입 화면
+
+</br>
+  
+![image](https://github.com/hs-1971467-jungchulHwang/IOS_Final_Project/assets/115887505/dfe222fd-4c72-4ff7-8ef2-fd7f6d78d952)
+</br>
+</details>
+
+### 통계 화면
+
+</br>
+
+![image](https://github.com/hs-1971467-jungchulHwang/IOS_Final_Project/assets/115887505/16414af9-87a2-4066-906c-1fda920aad4e)
+</br>
+
 
 ## 💡 사용한 개념
 ```
