@@ -65,7 +65,7 @@ UISegmentedControll, Charts 라이브러리(PieChartView, BarChartView)
 
 ## 📹 시연 영상
 
-### Xcode버전이 낮아서 아이폰 최신 ios버전 지원이 안되서 에뮬레이터로 진행했습니다.</br> 따라서 렉이 많이 심합니다! 양해 부탁드립니다!
+### Xcode버전이 낮아서 아이폰 최신 ios버전 지원이 되지 않아 에뮬레이터로 진행했습니다.</br> 따라서 렉이 많이 심합니다! 양해 부탁드립니다!
 [<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
 ](https://youtu.be/G8HCprMc6s8)
 <br/>
