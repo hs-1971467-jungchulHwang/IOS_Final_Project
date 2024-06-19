@@ -21,7 +21,7 @@ UISegmentedControll, Charts 라이브러리(PieChartView, BarChartView)
 ```
 </br>
 
-## ❌ 프로젝트 진행 중 발생했던 문제들
+## ❌ 발생했던 문제들
 ```
 1. pod install 과정에서 오류로 제대로 install이 되지 않음
   -> 해결방법: cocoapods버전이 낮으면 종종 발생하는 문제임을 알아냄. Ruby버전을 업그레이드 후
