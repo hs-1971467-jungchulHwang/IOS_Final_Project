@@ -14,9 +14,31 @@
 ```
 </br>
 
-## 💻 화면 구성
+## 💡 사용한 개념
+```
+UITableView, UINavigationBar, Tab Bar Controller, UIPickerView, 
+UISegmentedControll, Charts 라이브러리(PieChartView, BarChartView)
+```
+</br>
 
-### 지출 화면
+## ❌ 프로젝트 진행 중 발생했던 문제들
+```
+1. pod install 과정에서 오류로 제대로 install이 되지 않음
+  -> 해결방법: cocoapods버전이 낮으면 종종 발생하는 문제임을 알아냄. Ruby버전을 업그레이드 후
+     cocoapods 최신버전으로 재설치 후 해결
+
+2. 차트 부분으로 넘어가면서 UIViewController에서 차트 class key값을 받지 못해서 앱이 중단되는 현상이 발생함
+  -> 해결방법: 스토리보드에서 아울렛 연결이 뒤엉키면서 발생함을 알아냄. 아울렛을 모두 끊고 다시 연결해서 해결
+
+3. 차트 함수가 값을 제대로 받지 못해 nil값이 생겨 차트 부분으로 넘어가면서 앱이 중단되는 현상이 발생함
+  -> 해결방법: int형인 price에 돈 단위 가시성을 위해 넣은 ' , ' 때문에 값이 제대로 넘어가지 않아서
+     nil값이 발생하는 것을 알아냄. price에 ' , '를 뺌으로서 해결
+```
+</br>
+
+## 💻 결과 화면
+
+### 지출 파트 화면
 
 </br>
 
@@ -25,7 +47,7 @@
 </br>
 
 
-### 수입 화면
+### 수입 파트 화면
 
 </br>
   
@@ -34,23 +56,16 @@
 </br>
 </details>
 
-### 통계 화면
+### 통계 파트 화면
 
 </br>
 
 ![image](https://github.com/hs-1971467-jungchulHwang/IOS_Final_Project/assets/115887505/16414af9-87a2-4066-906c-1fda920aad4e)
 </br>
 
-
-## 💡 사용한 개념
-```
-UITableView, UINavigationBar, Tab Bar Controller, UIPickerView, 
-UISegmentedControll, Charts 라이브러리(PieChartView, BarChartView)
-```
-
 ## 📹 시연 영상
 
-### Xcode버전이 낮아서 아이폰 최신 ios버전 지원이 안되서 에뮬레이터로 진행했습니다.</br> 따라서 렉이 많이 심합니다! 이해부탁드립니다
+### Xcode버전이 낮아서 아이폰 최신 ios버전 지원이 안되서 에뮬레이터로 진행했습니다.</br> 따라서 렉이 많이 심합니다! 이해 부탁드립니다!
 [<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
 ](https://youtu.be/G8HCprMc6s8)
 <br/>
